@@ -14,7 +14,7 @@ class MulticastDNS extends EventEmitter {
 
     this.broadcast = options.broadcast !== false
     this.interval = options.interval || (1e3 * 10)
-    this.serviceTag = options.serviceTag || 'ipfs.local'
+    this.serviceTag = options.serviceTag || '_p2p._udp.local'
     this.port = options.port || 5353
     this.peerInfo = options.peerInfo
     this._queryInterval = null
